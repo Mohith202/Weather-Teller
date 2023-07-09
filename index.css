@@ -1,0 +1,67 @@
+body{
+    margin:0%;
+    padding:0%;
+    background-color: rgb(93, 28, 28);
+
+}
+.container{
+    width:55%;
+    height:509px;
+    background-color: wheat;
+    justify-content: center;
+    margin:auto;
+    margin-top:10vh;
+    border-radius: 25px;
+}
+.header{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+.search_bar input{
+    margin:10px;
+    padding:10px;
+    border-radius: 20px;
+    border:none;
+    text-transform: uppercase;
+    width:45vw;    
+}
+.map{
+    font-size: 30px; 
+    margin-top:10px;
+}
+.search{
+    font-size: 25px;
+    padding:10px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+}
+.search:hover{
+    background-color: black;
+    color: white;
+}
+.img{
+    margin:auto;
+    width:50%;
+
+}
+.temperature{
+    margin:auto;
+    text-align: center;
+}
+.lowerfoot{
+    display: flex;
+    justify-content:space-between;
+
+}
+.humidity{
+    margin:20px;
+    font-size: 20px;
+
+}
+.wind-speed{
+    font-size: 20px;
+    margin:20px;
+}
