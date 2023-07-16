@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wether App| API</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <div class="map"><i class="fa fa-map-marker"></i></div>
             <div class="search_bar">
-                <input type="text" placeholder="Enter your Location">
+                <input class="lat" type="text" placeholder="Enter your Latitude">
+                <!-- <input class="long" type="text" placeholder="enter your longitude"> -->
             </div>
             <div class="search"><i class="fa fa-search"></i></div>
         </div>
         <div class="img">
             <img src="img/404.png" alt="Error">
         </div>
+        <span class="not-found"></span>
         <div class="temperature">
-            <span>fjhsx</span>
+            <span></span>
         </div>
         <div class="lowerfoot">
-    <div class="humidity">     	
-        <i class="fa fa-water"></i>
-        <span></span>
-        <p>Humidity</p> </div>
-    <div class="wind-speed">
-        <i class="fa fa-wind"></i>
-         <span></span>   
-        <p>Wind Speed</p></div>
+            <div class="humidity">
+                <i class="fa fa-water"></i>
+                <span></span>
+                <p>Humidity</p>
+            </div>
+            <div class="wind-speed">
+                <i class="fa fa-wind"></i>
+                <span></span>
+                <p>Wind Speed</p>
+            </div>
         </div>
     </div>
 </body>
 <script src="index.js"></script>
 <script src="https://kit.fontawesome.com/042fb72f4b.js" crossorigin="anonymous"></script>
+
 </html>
