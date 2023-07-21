@@ -9,15 +9,15 @@ search.addEventListener('click', () => {
     if (cityname === "")
         return;
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${APIkey}`).then(response => response.json()).then(json => {
-        if (json.code === '404') {
-            container.style.height = '400px';
+        if (json.cod === '404') {
+            container.style.height = '50vh';
             lowerfoot.style.display = 'none';
             error404.style.display = 'block';
             error404.innerHTML='Plz Enter Correct city';
             return;
         }
         error404.style.display = "block";
-        container.style.height = '900px';
+        container.style.height = '90vh';
         const image = document.querySelector('img');
         const temperature = document.querySelector('.temperature span');
         const wind = document.querySelector('.wind-speed span');

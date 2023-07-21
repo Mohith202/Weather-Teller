@@ -6,33 +6,40 @@ body{
 }
 .container{
     width:25%;
-    height:600px;
     background-color: wheat;
     justify-content: center;
     margin:auto;
     margin-top:10vh;
     border-radius: 25px;
-    transition: 0.6 ease-out;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .header{
     display: flex;
-    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    padding: 15px;
+
+}
+.search_bar{
+    margin: auto;
+    width:50%;
     text-align: center;
-    justify-content: center;
-    padding-top: 15px;
+    /* border: 1px solid black; */
+    
 }
 .search_bar input{
-    margin:10px;
     padding:10px;
+    width: 100%;
     border-radius: 20px;
     border:none;
-    width:auto;
     text-transform: uppercase;
        
 }
-.map{
-    font-size: 30px; 
-    margin-top:10px;
+.map i{
+    display:block;
+   padding-top: 20%;
+    font-size: 165%; 
+    width:20%;
 }
 .search{
     border:solid black 2px;
@@ -46,13 +53,18 @@ body{
     background-color: black;
     color: white;
 }
+.img{
+    display:flex;
+    margin: auto;
+    justify-content: center;
+}
 img{
-    margin:auto;
-    width:299px;
-    height:250px;
+   
+    width:80%;
+    height:auto;
     display: inline;
     object-fit: contain;
-    padding-bottom:20px ;
+    
 }
 .temperature {
     margin:auto;
@@ -61,18 +73,20 @@ img{
 }
 .lowerfoot{
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-between;
+    margin-top: 5vh;
 
 }
 .humidity{
-    margin:20px;
-    font-size: 20px;
-    margin-top: 80px;
+    margin:auto;
+    font-size: 120%;
+    margin-top: 5vh;
 }
 .wind-speed{
-    font-size: 20px;
-    margin:20px;
-    margin-top: 80px;
+    font-size: 120%;
+    margin:auto;
+    margin-top: 5vh;
 }
 .not-found{
     margin:auto;
