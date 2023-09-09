@@ -5,7 +5,7 @@ const error404 = document.querySelector('.not-found');
 
 search.addEventListener('click', () => {
     const cityname = document.querySelector('.lat').value;
-    const APIkey = 'xxxe82a32401cd3bf82a7xxxxxxxxxxx';
+    const APIkey = 'a0ee82a32401cd3bf82a76384e7fe8e7';
     if (cityname === "")
         return;
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${APIkey}`).then(response => response.json()).then(json => {
