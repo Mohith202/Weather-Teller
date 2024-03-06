@@ -15,7 +15,8 @@ search.addEventListener('click', () => {
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${APIkey}`).then(response => response.json()).then(json => {
         if (json.cod === '404') {
-            container.style.height = '50vh';
+            // container.style.height = '50vh';
+
             lowerfoot.style.display = 'none';
             error404.style.display = 'block';
             error404.innerHTML='Plz Enter Correct city name';
@@ -24,7 +25,7 @@ search.addEventListener('click', () => {
             return;
         }
 
-        
+        lowerfoot.style.display = 'flex';
 
         if (json.weather[0].description==="clear sky"){
             document.getElementById('image').style.display="block";
@@ -40,6 +41,10 @@ search.addEventListener('click', () => {
             document.getElementById('image').src="img/rain.png";
         }
         if (json.weather[0].description==="overcast clouds"){
+            document.getElementById('image').style.display="block";
+            document.getElementById('image').src="img/snow.png";
+        }
+        if (json.weather[0].description==="few clouds"){
             document.getElementById('image').style.display="block";
             document.getElementById('image').src="img/cloud.png";
         }

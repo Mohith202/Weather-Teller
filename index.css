@@ -86,6 +86,7 @@ img{
 .lowerfoot{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content:space-between;
     margin: 3vh;
 
@@ -109,7 +110,7 @@ img{
 @media (max-width:800px) {
     .container{
         width:75vw; 
-        height:60vh;
+    
     }
     h1{
         font-size: 5vw !important;
@@ -127,22 +128,22 @@ img{
                 font-size: 5vw;
                 padding: 0.5vw;
             }
+            .temperature{
+                font-size: 8vw;
+            }
 }
 
 @media (min-width:991px) and (max-width:1599px) {
-    .container{
-        height:77vh !important;
-    }
-  
+
 }
 
-@media (min-width:1600px) and (max-width:1800px) {
+/* @media (min-width:1600px) and (max-width:1800px) {
     .container{
         height:65vh !important;
     }
-}
-@media (min-width:1800px) and (max-width:2100px) {
+} */
+/* @media (min-width:1800px) and (max-width:2100px) {
     .container{
         height:75vh !important;
     }
-}
+} */
