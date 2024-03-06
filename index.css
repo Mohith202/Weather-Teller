@@ -5,11 +5,13 @@ body{
 
 }
 .container{
-    width:25%;
+    width:25vw;
+    /* height:50vh; */
     background-color: wheat;
     justify-content: center;
     margin:auto;
     margin-top:10vh;
+    margin-bottom:10vh;
     border-radius: 25px;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -17,41 +19,51 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    margin: 3vw;
 
 }
 .search_bar{
     margin: auto;
-    width:50%;
+    width:75%;
     text-align: center;
     /* border: 1px solid black; */
     
 }
 .search_bar input{
-    padding:10px;
-    width: 100%;
+    padding:0.25vw;
+    width: 90%;
     border-radius: 20px;
     border:none;
+    font-size: 1.05vw;
     text-transform: uppercase;
+    border-bottom: 3.4px solid  black;
        
 }
+/* .map{
+    border: 5px solid black;
+    align-items: center;
+} */
 .map i{
     display:block;
-   padding-top: 20%;
-    font-size: 165%; 
+   /* padding-top: 20%; */
+    font-size: 1.75vw; 
     width:20%;
 }
 .search{
     border:solid black 2px;
-    font-size: 15px;
-    padding:10px;
+    font-size: 1vw;
+    padding:0.5vw;
     border-radius: 50px;
     background-color: white;
     cursor: pointer;
 }
 .search:hover{
-    background-color: black;
-    color: white;
+    /* background-color: black; */
+    background-color: rgb(205, 195, 195);
+}
+.search:active{
+    /* background-color: black; */
+    background-color: rgb(246, 199, 199);
 }
 .img{
     display:flex;
@@ -69,13 +81,13 @@ img{
 .temperature {
     margin:auto;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.05vw;
 }
 .lowerfoot{
     display: flex;
     flex-wrap: wrap;
     justify-content:space-between;
-    margin-top: 5vh;
+    margin: 3vh;
 
 }
 .humidity{
@@ -92,4 +104,45 @@ img{
     margin:auto;
     text-align: center;
     font-size: 32px;
+}
+
+@media (max-width:800px) {
+    .container{
+        width:75vw; 
+        height:60vh;
+    }
+    h1{
+        font-size: 5vw !important;
+        width:50vw !important;
+        }
+            .map i{
+                font-size: 7vw;
+
+            }
+            .lat{
+                font-size: 5vw !important;
+                padding: 1.25vw;
+            }
+            .search i{
+                font-size: 5vw;
+                padding: 0.5vw;
+            }
+}
+
+@media (min-width:991px) and (max-width:1599px) {
+    .container{
+        height:77vh !important;
+    }
+  
+}
+
+@media (min-width:1600px) and (max-width:1800px) {
+    .container{
+        height:65vh !important;
+    }
+}
+@media (min-width:1800px) and (max-width:2100px) {
+    .container{
+        height:75vh !important;
+    }
 }
